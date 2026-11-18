@@ -1,4 +1,10 @@
 
+# Pastelaria Facil - Controle de despesas
+# Este modulo registra os gastos da pastelaria.
+# Tambem permite calcular o total das despesas.
+# Faz parte do projeto MVP Pastelaria Facil.
+
+
 despesas = []
 
 def registrar_despesa(descricao, valor):
