@@ -1,0 +1,26 @@
+
+name: Testes Pastelaria Facil
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar pytest
+        run: pip install pytest
+
+      - name: Executar testes
+        run: python -m pytest teste_pastelaria.py -v
