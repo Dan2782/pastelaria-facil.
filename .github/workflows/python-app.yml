@@ -20,7 +20,7 @@ jobs:
           python-version: '3.10'
 
       - name: Instalar pytest
-        run: pip install pytest
+        run: python -m pip install pytest
 
       - name: Executar testes
-        run: run: python -m pytest test_pastelaria.py -v
+        run: python -m pytest test_pastelaria.py -v
