@@ -23,4 +23,4 @@ jobs:
         run: pip install pytest
 
       - name: Executar testes
-        run: python -m pytest teste_pastelaria.py -v
+        run: run: python -m pytest test_pastelaria.py -v
